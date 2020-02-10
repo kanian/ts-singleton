@@ -2,10 +2,21 @@
 
 This decorator let's you turn any class into a singleton.
 
-To install:
+## To install:
 
 ```
 npm i ts-singleton
+```
+
+Then enable decorators in your tsconfig.json:
+
+```
+{
+    "compilerOptions": {
+        "target": "ES5", 
+        "experimentalDecorators": true   
+    }
+}
 ```
 
 ## Usage
@@ -24,6 +35,3 @@ console.log(dummy.date === dummy2.date)
 // -> true
 ```
 
-For more information on rationale, usage and wha't happening under the hood, read:
-
-_https://medium.com/@patrick.assoa.adou/elegant-typescript-data-validation-with-decorators-68ec7506fd87_
